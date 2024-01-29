@@ -1,0 +1,83 @@
+<html>
+    <title>Aryan Kashyap - Portfolio</title>
+
+    <body style="background-image: radial-gradient(lightgreen,green); margin: 10;
+    padding: 10;";>
+        <div style ="text-align: center; padding: 20px; color: navy;">
+            <h1><u>Aryan Kashyap Portfolio</u></h1>
+        </div>
+        <div>
+            <h2>Brief Intro</h2>
+            <h3>I am Aryan Kashyap currently in my first year pursuing Civil Enginnering form IIT Bombay. My hometown is Bokaro Steel City which is an industrial town in Jharkhand. I am passionate about programming and like to pursue many different intrests. I know the basics of javascript and am learning it and some of it's frameworks. I am also learning rust and Tailwind CSS. I am also proficient in Python and SQL and also made a project under WiDS called "Chatbot over PDF's using RAG". I want to learn web development and will be excited to be included in DevCom.
+                </h3>
+        </div>
+        <div><h2>
+            <marquee behavior="alternate" direction = "right">My Hobbies</marquee></h2>
+        </div>
+        <div style ="display: flex; justify-content: space-between; padding-left: 25px; padding-right: 25px; font-family: Georgia, 'Times New Roman', Times, serif; background-image: linear-gradient(red,yellow); margin: 10; border-radius: 15px;">
+            <div style="padding: 20px;"><a href="badminton.html"> Badminton</a></div>
+            <div style="padding: 20px;"><a href="books.html"> Reading Books</a></div>
+            <div style="padding: 20px;"> <a href="movies.html">Critiquing Movies</a></div>
+        </div>
+
+        <style>       
+            .container {
+                display: flexbox; justify-content: center;
+                max-width: 600px;
+                margin: 50px auto;
+                background-color: gold;
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow: 0 0 10px blue;
+            }        
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }        
+            input, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 16px;
+                box-sizing: border-box;
+            }
+            button{
+                background-color: darkblue; 
+                color: white; 
+                padding: 10px 25px;
+                border-radius: 20px; 
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: aqua;
+                color: blueviolet;
+            }        
+        </style>
+        
+        <div class="container" >
+        <h2>Contact Me </h2>
+        
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows = "6" ></textarea>
+    
+            <button type="button" onclick=sendEmail()  > Message</button>
+        
+        </div>
+    
+        <script>
+        function sendEmail() {
+            var name = document.getElementById('name').value;
+            var message = document.getElementById('message').value;
+
+            console.log('Name:', name);
+            console.log('Message:', message);
+            //Could not implement the backend server here so just added a google form at the end.
+    
+        }
+        </script>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdv-N1JWL0C10njR8hhgKqlwShK49T5GfL4lIgXGdgK4ym2Iw/viewform?embedded=true" width="640" height="719" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>        
+
+    </body>
+</html>
